@@ -1,9 +1,17 @@
-2021-10-03 21:41:45 - root - INFO - SUCCESS: file ./data/bank_data.csv loaded successfully
-2021-10-03 21:41:45 - root - INFO - INFO : Transforming the categorical data
-2021-10-03 21:41:45 - root - INFO - SUCCESS: Categorical data transformation finished.
-2021-10-03 21:41:45 - root - INFO - INFO: Splitting data into train and test (70%, 30%).
-2021-10-03 21:41:45 - root - INFO - SUCCESS: Data splitting finished.
-2021-10-03 21:41:45 - root - INFO - INFO: X_train size (7088, 24).
-2021-10-03 21:41:45 - root - INFO - INFO: X_test size (3039, 24).
-2021-10-03 21:41:45 - root - INFO - INFO: Y_train size (7088,).
-2021-10-03 21:41:45 - root - INFO - INFO: Y_test size (3039,).
+2021-10-15 19:09:27 - root - INFO - SUCCESS: file ./data/bank_data.csv loaded successfully
+2021-10-15 19:09:27 - root - INFO - INFO : Transforming the categorical data
+2021-10-15 19:09:27 - root - INFO - SUCCESS: Categorical data transformation finished.
+2021-10-15 19:09:29 - root - INFO - INFO: Splitting data into train and test (70%, 30%).
+2021-10-15 19:09:29 - root - INFO - SUCCESS: Data splitting finished.
+2021-10-15 19:09:29 - root - INFO - INFO: X_train size (7088, 19).
+2021-10-15 19:09:29 - root - INFO - INFO: X_test size (3039, 19).
+2021-10-15 19:09:29 - root - INFO - INFO: Y_train size (7088,).
+2021-10-15 19:09:29 - root - INFO - INFO: Y_test size (3039,).
+2021-10-15 19:09:29 - root - INFO - INFO: Saving reports
+2021-10-15 19:09:29 - root - INFO - INFO: Saving random forest reports
+2021-10-15 19:09:29 - root - INFO - INFO: ..... Test report
+2021-10-15 19:09:31 - root - INFO - INFO: ..... Train report
+2021-10-15 19:09:32 - root - INFO - INFO: Saving logistic regression reports
+2021-10-15 19:09:32 - root - INFO - INFO: ..... Test report
+2021-10-15 19:09:34 - root - INFO - INFO: ..... Train report
+2021-10-15 19:09:35 - root - INFO - SUCCESS: Reports saved successfully.
