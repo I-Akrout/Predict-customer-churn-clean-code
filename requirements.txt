@@ -6,5 +6,6 @@ matplotlib==3.4.3
 seaborn==0.11.2
 scikit-learn==0.24.1
 dataframe_image==0.1.1
+pytest==6.2.5
 pylint
 autopep8

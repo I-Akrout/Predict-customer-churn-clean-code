@@ -1,17 +1,59 @@
-2021-10-15 19:09:27 - root - INFO - SUCCESS: file ./data/bank_data.csv loaded successfully
-2021-10-15 19:09:27 - root - INFO - INFO : Transforming the categorical data
-2021-10-15 19:09:27 - root - INFO - SUCCESS: Categorical data transformation finished.
-2021-10-15 19:09:29 - root - INFO - INFO: Splitting data into train and test (70%, 30%).
-2021-10-15 19:09:29 - root - INFO - SUCCESS: Data splitting finished.
-2021-10-15 19:09:29 - root - INFO - INFO: X_train size (7088, 19).
-2021-10-15 19:09:29 - root - INFO - INFO: X_test size (3039, 19).
-2021-10-15 19:09:29 - root - INFO - INFO: Y_train size (7088,).
-2021-10-15 19:09:29 - root - INFO - INFO: Y_test size (3039,).
-2021-10-15 19:09:29 - root - INFO - INFO: Saving reports
-2021-10-15 19:09:29 - root - INFO - INFO: Saving random forest reports
-2021-10-15 19:09:29 - root - INFO - INFO: ..... Test report
-2021-10-15 19:09:31 - root - INFO - INFO: ..... Train report
-2021-10-15 19:09:32 - root - INFO - INFO: Saving logistic regression reports
-2021-10-15 19:09:32 - root - INFO - INFO: ..... Test report
-2021-10-15 19:09:34 - root - INFO - INFO: ..... Train report
-2021-10-15 19:09:35 - root - INFO - SUCCESS: Reports saved successfully.
+2021-10-25 23:30:57 - root - INFO - ## Testing the import data function ##
+2021-10-25 23:30:57 - root - INFO - SUCCESS: file ./data/bank_data.csv loaded successfully
+2021-10-25 23:30:57 - root - INFO - Testing import_data: SUCCESS
+2021-10-25 23:30:57 - root - INFO - ## Testing the eda function ##
+2021-10-25 23:30:57 - root - INFO - Checking if eda folder exists
+2021-10-25 23:30:57 - root - INFO - Folder exists.
+2021-10-25 23:30:57 - root - INFO - Backing up the folder.
+2021-10-25 23:30:57 - root - INFO - Importing data.
+2021-10-25 23:30:57 - root - INFO - SUCCESS: file ./data/bank_data.csv loaded successfully
+2021-10-25 23:30:57 - root - INFO - Performing EDA ...
+2021-10-25 23:31:03 - root - INFO - EDA done.
+2021-10-25 23:31:03 - root - INFO - Starting the testing phase.
+2021-10-25 23:31:03 - root - INFO - Listing the content of the created folder.
+2021-10-25 23:31:03 - root - INFO - Deleting the created folder.
+2021-10-25 23:31:03 - root - INFO - Deleting the files: SUCCESS
+2021-10-25 23:31:03 - root - INFO - Deleting the folder: SUCCESS
+2021-10-25 23:31:03 - root - INFO - Renaming the eda folder.
+2021-10-25 23:31:03 - root - INFO - Testing the content of the folder and the expected files
+2021-10-25 23:31:03 - root - INFO - Generated files are conform to the expectation.
+2021-10-25 23:31:03 - root - INFO - ## Testing the encoder helper function ##
+2021-10-25 23:31:03 - root - INFO - SUCCESS: file ./data/bank_data.csv loaded successfully
+2021-10-25 23:31:03 - root - INFO - INFO : Transforming the categorical data
+2021-10-25 23:31:04 - root - INFO - SUCCESS: Categorical data transformation finished.
+2021-10-25 23:31:04 - root - INFO - ## Testing the feature engineering function ##
+2021-10-25 23:31:04 - root - INFO - SUCCESS: file ./data/bank_data.csv loaded successfully
+2021-10-25 23:31:04 - root - INFO - INFO : Transforming the categorical data
+2021-10-25 23:31:04 - root - INFO - SUCCESS: Categorical data transformation finished.
+2021-10-25 23:31:04 - root - INFO - INFO: Splitting data into train and test (70%, 30%).
+2021-10-25 23:31:04 - root - INFO - SUCCESS: Data splitting finished.
+2021-10-25 23:31:04 - root - INFO - INFO: X_train size (7088, 19).
+2021-10-25 23:31:04 - root - INFO - INFO: X_test size (3039, 19).
+2021-10-25 23:31:04 - root - INFO - INFO: Y_train size (7088,).
+2021-10-25 23:31:04 - root - INFO - INFO: Y_test size (3039,).
+2021-10-25 23:31:04 - root - INFO - ## Testing the train model function ##
+2021-10-25 23:31:04 - root - INFO - SUCCESS: file ./data/bank_data.csv loaded successfully
+2021-10-25 23:31:04 - root - INFO - INFO : Transforming the categorical data
+2021-10-25 23:31:04 - root - INFO - SUCCESS: Categorical data transformation finished.
+2021-10-25 23:31:04 - root - INFO - INFO: Splitting data into train and test (70%, 30%).
+2021-10-25 23:31:04 - root - INFO - SUCCESS: Data splitting finished.
+2021-10-25 23:31:04 - root - INFO - INFO: X_train size (7088, 19).
+2021-10-25 23:31:04 - root - INFO - INFO: X_test size (3039, 19).
+2021-10-25 23:31:04 - root - INFO - INFO: Y_train size (7088,).
+2021-10-25 23:31:04 - root - INFO - INFO: Y_test size (3039,).
+2021-10-25 23:31:04 - root - INFO - INFO: Begining the training of the random forest and linear regression
+2021-10-25 23:31:04 - root - INFO - INFO: Initialization of random forest parameters
+2021-10-25 23:31:04 - root - INFO - INFO: Fitting data into the random forest
+2021-10-25 23:36:44 - root - INFO - SUCCESS: Training random forest model finished.
+2021-10-25 23:36:44 - root - INFO - INFO: Fitting data into the linear regression model
+2021-10-25 23:36:44 - root - INFO - SUCCESS: Training linear regression model finished.
+2021-10-25 23:36:44 - root - INFO - INFO: Saving the random forest model ...
+2021-10-25 23:36:44 - root - INFO - SUCCESS: Random forest model saved.
+2021-10-25 23:36:44 - root - INFO - INFO: Saving the random forest model ...
+2021-10-25 23:36:44 - root - INFO - SUCCESS: Random forest model saved.
+2021-10-25 23:36:44 - root - INFO - INFO: Creating ROC curves
+2021-10-25 23:36:44 - root - INFO - INFO: Cleaning the plots of matplotlib
+2021-10-25 23:36:44 - root - INFO - INFO: Plotting the learner regression ROC curve.
+2021-10-25 23:36:44 - root - INFO - INFO: Plotting the Random forest ROC curve.
+2021-10-25 23:36:44 - root - INFO - INFO: Saving the figure ...
+2021-10-25 23:36:44 - root - INFO - SUCCESS: ROC curves generated and saved

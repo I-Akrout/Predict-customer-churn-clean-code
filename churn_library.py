@@ -1,6 +1,6 @@
 # library doc string
 '''
-Description: This module containes and optimized, consice and clean code equivalent
+Description: This module containes and optimizes, consice and clean code equivalent
 to churn_notebook.ipynb. This is the main file of the project 'Predict customer Churn
 with Clean Code' as part of the Machine Learning DevOps Engineering Nanodegree Program
 
@@ -13,7 +13,6 @@ Version: 0.0.1
 
 # import libraries
 
-from datetime import datetime
 import logging
 import joblib
 import numpy as np
@@ -28,7 +27,6 @@ from sklearn.metrics import plot_roc_curve, classification_report
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-now = datetime.now
 logging.basicConfig(
     filename='./logs/churn_library.log',
     level=logging.INFO,
@@ -312,14 +310,14 @@ def perform_feature_engineering(df_data, response):
     Y = df_data[response]
 
     # Spliting the data to 70% train and 30% test
-    X_train, X_test, Y_train, Y_test = train_test_split(
+    x_train, x_test, y_train, y_test = train_test_split(
         X, Y, test_size=0.3, random_state=42)
     logging.info('SUCCESS: Data splitting finished.')
-    logging.info('INFO: X_train size {}.'.format(X_train.shape,))
-    logging.info('INFO: X_test size {}.'.format(X_test.shape,))
-    logging.info('INFO: Y_train size {}.'.format(Y_train.shape,))
-    logging.info('INFO: Y_test size {}.'.format(Y_test.shape,))
-    return X_train, X_test, Y_train, Y_test
+    logging.info('INFO: X_train size {}.'.format(x_train.shape,))
+    logging.info('INFO: X_test size {}.'.format(x_test.shape,))
+    logging.info('INFO: Y_train size {}.'.format(y_train.shape,))
+    logging.info('INFO: Y_test size {}.'.format(y_test.shape,))
+    return x_train, x_test, y_train, y_test
 
 
 def classification_report_image(y_train,
@@ -588,7 +586,7 @@ if __name__ == "__main__":
     X_TRAIN, X_TEST, Y_TRAIN, Y_TEST = perform_feature_engineering(
         df_full_data, 'Churn')
 
-    #train_models(X_TRAIN, X_TEST, Y_TRAIN, Y_TEST)
+    train_models(X_TRAIN, X_TEST, Y_TRAIN, Y_TEST)
 
     rfc_model = joblib.load('./models/rfc_model.pkl')
     lr_model = joblib.load('./models/logistic_model.pkl')
